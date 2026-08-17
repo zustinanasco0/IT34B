@@ -22,6 +22,7 @@ CREATE TABLE user  (
         user_acitivity_log_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
 
+
         INDEX idx_user_id (user_id),
         INDEX idx_action (user_activity_log_action),
         INDEX idx_cretaed_at (user_acitivity_log_created_at),
