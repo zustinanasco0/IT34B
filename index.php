@@ -14,3 +14,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETSUNA HANABI</title>
+</head>
+<body>
+    <form method="POST">
+        <button
+            type="submit"
+            name="action"
+        >Sample</button>
+    
+</body>
+</html>
