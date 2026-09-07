@@ -2,11 +2,7 @@
     function logActivity($pdo, $user_id, $user_email, $action, $status='success'){
         try{
             // Get Client IP Address
-<<<<<<< HEAD
-            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
-=======
             $ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'Unkknown';
->>>>>>> 10e53b08242d0feb1fea29f5f1f506eeaecf5eba
 
             // String to Array 
             if(strpos($ip,',') !==false){
