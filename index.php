@@ -27,25 +27,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     } else {
 
     if(loginUser($pdo,$login,$password)){
-
- logActivity( 
-    $pdo,$_SESSION['user_id'],
-    $_SESSION['user_email'],
-
-    'login',
-    'success'
-
-
-
-
- )
+    
+logActivity( $pdo,$_SESSION['user_id'],$_SESSION['user_email'],'login','success');
+header('Location:' . BASE_URL . '/app/' . $_SESSION['user_role'] . '/index.php');
 
     }
-
-
-
 }
 
+}
 ?>
 
 <!DOCTYPE html>
