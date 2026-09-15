@@ -30,16 +30,25 @@ logActivity(
 
 <!DOCTYPE html>
 <html lang="en">
+    <html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome, Admin</h1>
-    <a href="../../auth/signout.php">Sign Out</a>
 
-    <table border = "1">
+<h1>Welcome, Admin</h1>
+<a href="../../auth/signout.php">Sign Out</a>
+    <div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+    
+    
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
        <thead>
 
     <tr>
@@ -62,7 +71,7 @@ logActivity(
              <td> <?= htmlspecialchars( $activity['user_id']) ?></td>
                   <td> <?= htmlspecialchars( $activity['user_email']) ?></td>
                        <td> <?= htmlspecialchars( $activity['activity_log_action']) ?></td>
-                            <td> <?= htmlspecialchars( $activity['activity_log)status']) ?></td>
+                            <td> <?= htmlspecialchars( $activity['activity_log_status']) ?></td>
                                  <td> <?= htmlspecialchars( $activity['activity_log_ip_address']) ?></td>
                                       <td> <?= htmlspecialchars( $activity['activity_log_user_agent']) ?></td>
                                            <td> <?= htmlspecialchars( $activity['activity_log_created_at']) ?></td>
@@ -70,5 +79,6 @@ logActivity(
 <?php endforeach; ?>
 
     </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
