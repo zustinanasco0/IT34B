@@ -1,6 +1,6 @@
 <?php
 require_once 'config/config.php';
-require_once 'config/functions.php';
+
 
 if(isset($_SESSION['user_id'])){
     header('Location' . BASE_URL . '/app/' . $_SESSION['user_role'] . '/index.php');
@@ -70,6 +70,6 @@ exit;
     <button type="submit">Sign In</button>
     
 </form>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
