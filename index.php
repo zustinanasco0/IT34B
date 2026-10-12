@@ -90,5 +90,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     
 </form>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+
+<?php if (isset($_GET['timeout'])): ?>
+    
+    <p>Your session has timed out due to inactivity. Please log in again.</p>
+
+    <?php endif; ?>
+
+        
+    
+
+
+
 </body>
+
 </html>
